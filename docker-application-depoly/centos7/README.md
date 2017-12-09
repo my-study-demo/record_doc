@@ -29,6 +29,11 @@ IPADDR=192.168.1.88		#ip地址
 NETMASK=255.255.255.0	#子网隐码
 GATEWAY=192.168.1.1		#网关IP
 ```
+
+本机windows机器ip地址查询
+```bash
+ipconfig /all
+```
 修改完成后，保存！
 
 重启网络
