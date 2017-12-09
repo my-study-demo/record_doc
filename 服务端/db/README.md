@@ -1,10 +1,23 @@
+æ•°æ®åº“ï¼ˆmysqlï¼‰
+===
 
-Êı¾İ¿â£¨mysql£©
-#À­È¡¾µÏñ
+æ‹‰å–é•œåƒ
+---
+```bash
 docker pull mysql:5.7
-#¹¹½¨ÈİÆ÷
+```
+
+æ„å»ºå®¹å™¨
+---
+```bash
 docker run --name mysql -p 3306:3306 --restart=always -v /etc/localtime:/etc/localtime:ro -e MYSQL_ROOT_PASSWORD=123456 -d mysql:5.7 --lower_case_table_names=1
-#Æô¶¯ÈİÆ÷
+```
+--lower_case_table_names=1:å¿½ç•¥å¤§å°å†™
+
+å¯åŠ¨å®¹å™¨
+---
+```bash
 docker mysql start
 docker mysql stop
 docker rm mysql
+```

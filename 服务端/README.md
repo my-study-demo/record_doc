@@ -1,8 +1,10 @@
-#服务器容器使用docker部署
+docker鏃ュ父缁存姢
+===
 
-#####
-移除所有的容器和镜像（大扫除）
-用一行命令大扫除：
+绉婚櫎鎵�鏈夌殑瀹瑰櫒鍜岄暅鍍忥紙澶ф壂闄わ級
+---
+```bash
 docker kill $(docker ps -q)
 docker rm $(docker ps -a -q)
 dockerrmi $(docker images -q -a)
+```
